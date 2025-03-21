@@ -62,13 +62,12 @@ const WorkoutForm = ({ workoutTypes, onSubmit, onCancel, workout }: WorkoutFormP
     setError(null);
 
     try {
-      let response;
       if (workout) {
         // Update existing workout
-        response = await updateWorkoutLog(workout.id, formData);
+        await updateWorkoutLog(workout.id, formData);
       } else {
         // Create new workout
-        response = await createWorkoutLog(formData);
+        await createWorkoutLog(formData);
       }
 
       // Construct the complete workout object to return

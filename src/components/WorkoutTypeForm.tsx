@@ -40,13 +40,12 @@ const WorkoutTypeForm = ({ onSubmit, onCancel, workoutType }: WorkoutTypeFormPro
     setError(null);
 
     try {
-      let response;
       if (workoutType) {
         // Update existing workout type
-        response = await updateWorkoutType(workoutType.id, formData);
+        await updateWorkoutType(workoutType.id, formData);
       } else {
         // Create new workout type
-        response = await createWorkoutType(formData);
+        await createWorkoutType(formData);
       }
 
       // Construct the complete workout type object to return
