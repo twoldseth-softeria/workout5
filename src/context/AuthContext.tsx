@@ -1,5 +1,5 @@
 import { createContext, useContext, useEffect, ReactNode, useState } from 'react';
-import { AuthState, User } from '../types/auth';
+import { AuthState } from '../types/auth';
 import { getCurrentUser, redirectToLogin } from '../api/auth';
 
 const initialState: AuthState = {
