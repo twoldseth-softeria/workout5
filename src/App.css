@@ -228,3 +228,15 @@
 .empty-state p {
   margin-bottom: 1.5rem;
 }
+
+/* User profile styles */
+.user-profile {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.user-profile__name {
+  font-weight: 500;
+  color: var(--color-primary);
+}

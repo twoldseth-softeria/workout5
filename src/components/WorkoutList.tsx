@@ -134,8 +134,7 @@ const WorkoutList = () => {
     <div>
       {error && <div className="error">{error}</div>}
       
-      <div className="header">
-        <h1>Workout Tracker</h1>
+      <div style={{ marginBottom: '1rem' }}>
         <div>
           {activeTab === 'workouts' && (
             <button 
